@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 25px;
+    font-family: sans-serif;
+}
+.rating{
+    margin: 0 0 1em 0;
+    padding: 0;
+    border: none;
+}
+
+.rating__caption{
+    margin-bottom: 0.5em;
+    padding: 0;
+}
+
+.rating__group{
+    position: relative;
+    width: 10em;
+    height: 2em;
+    background-image: url(./ic-actions-star.svg);
+    background-size: 2em auto;
+}
+
+.rating__star{
+    position: absolute;
+    appearance: none;
+    font-size: inherit;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 2em;
+    background-size: 2em auto;
+    background-repeat: repeat-x;
+ }
+
+ .rating__star:focus{
+    outline: none;
+ }
+
+ .rating__star:checked,
+ .rating__star:hover{
+    background-image: url(./bgg.svg);
+ }
+
+ .rating__star:hover ~  .rating__star   {
+    background-image: url(./ic-actions-star.svg);
+
+
+ } 
+
+.rating__star:nth-of-type(1){
+    width: 2em;
+    z-index: 5;
+}
+
+
+.rating__star:nth-of-type(2){
+    width: 4em;
+    z-index: 4;
+}
+
+.rating__star:nth-of-type(3){
+    width: 6em;
+    z-index: 3;
+}
+
+.rating__star:nth-of-type(4){
+    width: 8em;
+    z-index: 2;
+}
+
+.rating__star:nth-of-type(5){
+    width: 10em;
+    z-index: 1;
+}
